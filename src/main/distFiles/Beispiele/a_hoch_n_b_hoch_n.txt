@@ -1,10 +1,10 @@
-// Registermaschine als Akzeptor für a hoch n b hoch n
+// Registermaschine als Akzeptor fÃ¼r a hoch n b hoch n
 // a wird mit seinem ASCII-Code 141 und B mit 142 codiert.
 // Registerbelegung
 //   R1   Eingabeposition       Anfangswert 4
-//   R2   Anzahl a – Anzahl b   Anfangswert 0
-//   R3   Ausgabe: 1 für akzeptiert, 0 für nicht akzeptiert
-//   R4 … ab hier das Eingabewort eingeben
+//   R2   Anzahl a  Anzahl b   Anfangswert 0
+//   R3   Ausgabe: 1 fÃ¼r akzeptiert, 0 fÃ¼r nicht akzeptiert
+//   R4  ab hier das Eingabewort eingeben
 
          LOAD #4        // R1 initialisieren
          STORE 1
@@ -12,19 +12,19 @@
          STORE 2
          STORE 3
 
-AZählen: LOAD *1
+AZÃ¤hlen: LOAD *1
          JZERO Fertig   // Ende der Eingabe
          SUB #141
-         JNZERO BZählen // kein a mehr
+         JNZERO BZÃ¤hlen // kein a mehr
          LOAD 2
          ADD #1
          STORE 2
-         LOAD 1         // nächstes Zeichen
+         LOAD 1         // nÃ¤chstes Zeichen
          ADD #1
          STORE 1
-         GOTO AZählen
+         GOTO AZÃ¤hlen
 
-BZählen: LOAD *1
+BZÃ¤hlen: LOAD *1
          JZERO Fertig   // Ende der Eingabe
          SUB #141
          JZERO Ende     // ein a nach einem b
@@ -32,10 +32,10 @@ BZählen: LOAD *1
          JZERO Ende     // mehr b als a
          SUB #1
          STORE 2
-         LOAD 1         // nächstes Zeichen
+         LOAD 1         // nÃ¤chstes Zeichen
          ADD #1
          STORE 1
-         GOTO BZählen
+         GOTO BZÃ¤hlen
 
 Fertig:  LOAD 2
          JNZERO Ende

@@ -315,16 +315,16 @@ public class RemaspMachineController {
 			try {
 				this.neueAnzahlRegister = Integer.parseInt(this.eingabeText) + 1;
 				if (this.neueAnzahlRegister < 3) {
-					throw new Exception("Es müssen mind. 2 Register vorhanden sein.");
+					throw new Exception("Es mÃ¼ssen mind. 2 Register vorhanden sein.");
 				}
 			} catch (NumberFormatException ex) {
 				JOptionPane.showMessageDialog((Component) RemaspMachineController.this.remaspView,
-						"Ungültiges Zahlenformat.\n Bitte nur natürliche Zahlen größer 1 eingeben");
+						"UngÃ¼ltiges Zahlenformat.\n Bitte nur natÃ¼rliche Zahlen grÃ¶ÃŸer 1 eingeben");
 
 				return;
 			} catch (Exception ex) {
 				JOptionPane.showMessageDialog((Component) RemaspMachineController.this.remaspView,
-						"Die eingegebene Zahl muss mindestens 2 groß sein.");
+						"Die eingegebene Zahl muss mindestens 2 groÃŸ sein.");
 
 				return;
 			}

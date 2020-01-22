@@ -1,20 +1,20 @@
-//Algorithmus zur Suche in einem Binärbaum.
+//Algorithmus zur Suche in einem BinÃ¤rbaum.
 
 // 1 Knoten besteht aus 3 Registern: c(Ri)=Wert, c(Ri+1)=Zeiger auf linken Sohn, c(Ri+2)= Zeiger auf rechten Sohn
 
 //Eingabe: R1=gesuchte Zahl
 //Eingabe: R2 muss vom Anwender so initialisiert werden, dass R2 auf den Wert der Wurzel zeigt.
 //Ausgabe: gesuchte Zahl wurde gefunden -> c(R0)=1; gesuchte Zahl wurde nicht gefunden -> c(R0)=0
-// Ausgabe: c(R2)= Register Nr. der gesuchten Zahl (die Reg. Nr. in R2 ist natürlich nur gültig, falls es die gesuchte Zahl auch gibt)
+// Ausgabe: c(R2)= Register Nr. der gesuchten Zahl (die Reg. Nr. in R2 ist natÃ¼rlich nur gÃ¼ltig, falls es die gesuchte Zahl auch gibt)
 
 //Implementierung:
 //c(R2)= Zeiger auf den Wert des aktuellen Knoten
 
-//Die Folgenden Programmzeilen erstellen einen Binärbaum. Falls ein eigener Binärbaum gewünscht ist, folgende Zeilen auskommentieren
+//Die Folgenden Programmzeilen erstellen einen BinÃ¤rbaum. Falls ein eigener BinÃ¤rbaum gewÃ¼nscht ist, folgende Zeilen auskommentieren
 // und die Register selber belegen.
-// Der erstellte Binärbaum hat folgende IN-Order-Darstellung: (1, 25, 40, 50, 60, 75, 100)
+// Der erstellte BinÃ¤rbaum hat folgende IN-Order-Darstellung: (1, 25, 40, 50, 60, 75, 100)
 
-//Binärbaum Erzeugung - Anfang
+//BinÃ¤rbaum Erzeugung - Anfang
 		//Setze Zeiger auf Wurzel
 		load	#3
 		store	2
@@ -64,15 +64,15 @@
 		load	#0
 		store	22
 		store	23
-//Binärbaum Erzeugung - Ende
+//BinÃ¤rbaum Erzeugung - Ende
 
 
 // Eigentlicher Suchalgorithmus:
 
-			// WERT-ÜBERPRÜFUNG    (Beinhaltet der aktuelle Knoten den gesuchten Wert?)
-Wert-Überprüfung:	load	*2
+			// WERT-ÃœBERPRÃœFUNG    (Beinhaltet der aktuelle Knoten den gesuchten Wert?)
+Wert-ÃœberprÃ¼fung:	load	*2
 			sub	1
-			jzero	Erg=0? // Überprüfe, ob das Ergebnis tatsächlich 0 ist.
+			jzero	Erg=0? // ÃœberprÃ¼fe, ob das Ergebnis tatsÃ¤chlich 0 ist.
 
 			// LINKER SOHN KNOTEN  (die gesuchte Zahl ist kleiner als der aktuelle Knotenwert -> gehe in den linken Sohn Knoten)
 			load	2
@@ -82,18 +82,18 @@ Wert-Überprüfung:	load	*2
 			store	2
 			jzero	Zahl-nicht-vorhanden 	// Falls 0, gehe zu ZAHL NICHT VORHANDEN
 							//(Wenn der linke Sohn Knoten nicht vorhanden ist, ist auch die gesuchte Zahl nicht vorhanden)
-			goto	Wert-Überprüfung 	//gehe zur  WERT-ÜBERPRÜFUNG
+			goto	Wert-ÃœberprÃ¼fung 	//gehe zur  WERT-ÃœBERPRÃœFUNG
 
-			//ERGEBNIS TATSÄCHLICH 0?
+			//ERGEBNIS TATSÃ„CHLICH 0?
 Erg=0?:			load	*2
 			add	#1
 			sub	1
-			Jzero	rechter-Sohn//Falls 0, gehe zu RECHTER SOHN KNOTEN  (die gesuchte Zahl ist mind. 1 größer als der aktuelle Knotenwert)
-			// Das Ergebnis der Subtraktion bei der  WERT-ÜBERPRÜFUNG war tatsächlich 0, also haben wir unseren Knoten gefunden
+			Jzero	rechter-Sohn//Falls 0, gehe zu RECHTER SOHN KNOTEN  (die gesuchte Zahl ist mind. 1 grÃ¶ÃŸer als der aktuelle Knotenwert)
+			// Das Ergebnis der Subtraktion bei der  WERT-ÃœBERPRÃœFUNG war tatsÃ¤chlich 0, also haben wir unseren Knoten gefunden
 			end
 	
 
-			//RECHTER SOHN KNOTEN :gesuchte Zahl ist größer als aktueller Knotenwert -> gehe in den rechten Sohn Knoten
+			//RECHTER SOHN KNOTEN :gesuchte Zahl ist grÃ¶ÃŸer als aktueller Knotenwert -> gehe in den rechten Sohn Knoten
 rechter-Sohn:		load	2
 			add	#2
 			store	2
@@ -101,7 +101,7 @@ rechter-Sohn:		load	2
 			store	2
 			jzero	Zahl-nicht-vorhanden // Falls 0, gehe zu ZAHL NICHT VORHANDEN
 		        //(Wenn der rechte Sohn Knoten nicht vorhanden ist, ist auch die gesuchte Zahl nicht vorhanden)
-			goto	Wert-Überprüfung// WERT-ÜBERPRÜFUNG
+			goto	Wert-ÃœberprÃ¼fung// WERT-ÃœBERPRÃœFUNG
 
 			// ZAHL NICHT VORHANDEN
 Zahl-nicht-vorhanden:	END

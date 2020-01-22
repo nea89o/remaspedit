@@ -53,7 +53,7 @@ Schlf2Anf:	Load	*1
 		Store	2
 	//Wenn der Stapel leer ist, springe zum Ende
 		JZero	Ende
-	//Speicher Rückgabewert int *top
+	//Speicher RÃ¼ckgabewert int *top
 		Load	3
 		Store	*1
 		Goto	Schlf2Anf

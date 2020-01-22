@@ -88,7 +88,7 @@ public class RemaspEditorController {
 
 		menu.add(new StyledEditorKit.ForegroundAction("Rot", Color.red));
 
-		menu.add(new StyledEditorKit.ForegroundAction("Grün", Color.green));
+		menu.add(new StyledEditorKit.ForegroundAction("GrÃ¼n", Color.green));
 
 		menu.add(new StyledEditorKit.ForegroundAction("Blau", Color.blue));
 

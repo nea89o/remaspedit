@@ -4,10 +4,10 @@
 
 		LOAD 1
 		SUB 2
-		JZERO R2-größer
+		JZERO R2-grÃ¶ÃŸer
 		// Fall R1 > R2
 		LOAD 1
 		GOTO Ende
 		// Fall R2 >= R1
-R2-größer:	LOAD 2
+R2-grÃ¶ÃŸer:	LOAD 2
 Ende:		END

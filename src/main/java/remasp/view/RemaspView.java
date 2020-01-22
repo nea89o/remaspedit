@@ -224,7 +224,7 @@ public class RemaspView extends JFrame {
 		this.jTable1.setDefaultEditor(Long.class, new RemaspCellEditor());
 
 		this.jTable1.setToolTipText(
-				"<html>\nIn der rechten Spalte kann die Registerbelegung vorgenommen werden.<br>\nEs können nur natürliche Zahlen reingeschrieben werden. <br>\nDie Eingabe muss zweimal mit der Enter-Taste bestätigt werden.");
+				"<html>\nIn der rechten Spalte kann die Registerbelegung vorgenommen werden.<br>\nEs kÃ¶nnen nur natÃ¼rliche Zahlen reingeschrieben werden. <br>\nDie Eingabe muss zweimal mit der Enter-Taste bestÃ¤tigt werden.");
 		this.jTable1.setGridColor(Color.black);
 		this.jTable1.setRowHeight(20);
 		this.jTable1.getTableHeader().setReorderingAllowed(false);
@@ -247,7 +247,7 @@ public class RemaspView extends JFrame {
 		this.jButtonStarteProgramm.setFont(new Font("Tahoma", 0, 18));
 		this.jButtonStarteProgramm.setText("Starte Programm");
 		this.jButtonStarteProgramm.setToolTipText(
-				"<html> Hier klicken um das Programm zu starten. <br>\nDas Programm läuft automatisch durch.");
+				"<html> Hier klicken um das Programm zu starten. <br>\nDas Programm lÃ¤uft automatisch durch.");
 		this.jButtonStarteProgramm.setFocusable(false);
 		this.jButtonStarteProgramm.setHorizontalTextPosition(0);
 		this.jButtonStarteProgramm.setVerticalTextPosition(3);
@@ -255,7 +255,7 @@ public class RemaspView extends JFrame {
 		this.jButtonSetzeNeueAnzahlRegister.setFont(new Font("Tahoma", 0, 18));
 		this.jButtonSetzeNeueAnzahlRegister.setText("Setze Anzahl Register");
 		this.jButtonSetzeNeueAnzahlRegister.setToolTipText(
-				"<html>\nSetzt die Anzahl der Register. <br>\nAlle Register werden mit 0 initialisiert. <br>\nGegebenenfalls den Registerinhalt zwischenspeichern.<br>\nDie Anzahl der Register sollte nicht über Hunderttausend liegen.");
+				"<html>\nSetzt die Anzahl der Register. <br>\nAlle Register werden mit 0 initialisiert. <br>\nGegebenenfalls den Registerinhalt zwischenspeichern.<br>\nDie Anzahl der Register sollte nicht Ã¼ber Hunderttausend liegen.");
 
 		this.jLabel5.setFont(new Font("Tahoma", 0, 18));
 		this.jLabel5.setText("Maschinensteuerung");
@@ -276,31 +276,31 @@ public class RemaspView extends JFrame {
 		this.jButtonProgrammAbbrechen.setEnabled(false);
 
 		this.jButtonEinzelSchritt.setIcon(new ImageIcon(getClass().getResource("/remasp/images/arrow.gif")));
-		this.jButtonEinzelSchritt.setToolTipText("<html>\nHier klicken um den nächsten Befehl auszuführen.");
+		this.jButtonEinzelSchritt.setToolTipText("<html>\nHier klicken um den nÃ¤chsten Befehl auszufÃ¼hren.");
 		this.jButtonEinzelSchritt.setEnabled(false);
 
 		this.jButtonStarteEinzelschrittModus.setFont(new Font("Tahoma", 0, 18));
 		this.jButtonStarteEinzelschrittModus.setText("Starte Einzelschrittmodus");
 		this.jButtonStarteEinzelschrittModus.setToolTipText(
-				"<html>\nHier klicken um das Programm im Einzelschritt-Modus zu starten. <br>\nMit der unteren Pfeiltaste werden dann die einzelnen Befehle manuell ausgeführt.");
+				"<html>\nHier klicken um das Programm im Einzelschritt-Modus zu starten. <br>\nMit der unteren Pfeiltaste werden dann die einzelnen Befehle manuell ausgefÃ¼hrt.");
 
 		this.jButtonRegisterSpeichern.setFont(new Font("Tahoma", 0, 18));
 		this.jButtonRegisterSpeichern.setText("Register zwischenspeichern");
 		this.jButtonRegisterSpeichern.setToolTipText(
-				"<html>\nSpeichert den aktuellen Inhalt aller Register zwischen. <br>\n(Der Register-Zwischenspeicher wird bei Programmende mit gelöscht.)");
+				"<html>\nSpeichert den aktuellen Inhalt aller Register zwischen. <br>\n(Der Register-Zwischenspeicher wird bei Programmende mit gelÃ¶scht.)");
 
 		this.jButtonRegisterLaden.setFont(new Font("Tahoma", 0, 18));
 		this.jButtonRegisterLaden.setText("Register laden");
 		this.jButtonRegisterLaden.setToolTipText(
-				"<html>\nLädt den zuletzt gespeicherten Registerinhalt aus dem Zwischenspeicher. <br>\nFalls nach dem letzten Speichervorgang die Anzahl der Register erhöht wurde (von n auf n+k), <br>\nso behalten die neu hinzugekommenen Register (Register n+1 bis n+k) ihren aktuellen Wert <br>\nund die \"alten\" Register (Register 1 bis n) werden durch die Registerinhalte des Zwischenspeichers ersetzt.<br>\nFalls nach dem letzten Speichervorgang die Anzahl der Register erniedrigt wurde (von n auf n-k),<br>\nso werden die Register 1 bis n-k durch den Registerinhalt des Zwischenspeichers ersetzt.");
+				"<html>\nLÃ¤dt den zuletzt gespeicherten Registerinhalt aus dem Zwischenspeicher. <br>\nFalls nach dem letzten Speichervorgang die Anzahl der Register erhÃ¶ht wurde (von n auf n+k), <br>\nso behalten die neu hinzugekommenen Register (Register n+1 bis n+k) ihren aktuellen Wert <br>\nund die \"alten\" Register (Register 1 bis n) werden durch die Registerinhalte des Zwischenspeichers ersetzt.<br>\nFalls nach dem letzten Speichervorgang die Anzahl der Register erniedrigt wurde (von n auf n-k),<br>\nso werden die Register 1 bis n-k durch den Registerinhalt des Zwischenspeichers ersetzt.");
 		this.jButtonRegisterLaden.setEnabled(false);
 
 		this.jLabelTabellenGroesse.setFont(new Font("Tahoma", 0, 18));
-		this.jLabelTabellenGroesse.setText("Schriftgröße");
+		this.jLabelTabellenGroesse.setText("SchriftgrÃ¶ÃŸe");
 
 		this.jSpinnerTabellenGr.setFont(new Font("Tahoma", 0, 18));
 		this.jSpinnerTabellenGr
-				.setModel(new SpinnerListModel((Object[]) new String[] { "Klein", "Mittel", "Groß", "Monströs" }));
+				.setModel(new SpinnerListModel((Object[]) new String[] { "Klein", "Mittel", "GroÃŸ", "MonstrÃ¶s" }));
 		this.jSpinnerTabellenGr.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent evt) {
 				RemaspView.this.jSpinnerTabellenGrStateChanged(evt);
@@ -320,7 +320,7 @@ public class RemaspView extends JFrame {
 		this.jMenuDatei.add(this.jMenuItemNeu);
 
 		this.jMenuItemOeffnen.setAccelerator(KeyStroke.getKeyStroke(79, 2));
-		this.jMenuItemOeffnen.setText("Öffnen...");
+		this.jMenuItemOeffnen.setText("Ã–ffnen...");
 		this.jMenuDatei.add(this.jMenuItemOeffnen);
 
 		this.jMenuItemSpeichern.setAccelerator(KeyStroke.getKeyStroke(83, 2));
@@ -345,7 +345,7 @@ public class RemaspView extends JFrame {
 		this.jMenuBearbeiten.setFont(new Font("Segoe UI", 0, 16));
 
 		this.jMenuItemRueckgaengig.setAccelerator(KeyStroke.getKeyStroke(90, 2));
-		this.jMenuItemRueckgaengig.setText("Rückgängig");
+		this.jMenuItemRueckgaengig.setText("RÃ¼ckgÃ¤ngig");
 		this.jMenuBearbeiten.add(this.jMenuItemRueckgaengig);
 		this.jMenuBearbeiten.add(this.jSeparator3);
 
@@ -358,7 +358,7 @@ public class RemaspView extends JFrame {
 		this.jMenuBearbeiten.add(this.jMenuItemKopieren);
 
 		this.jMenuItemEinfuegen.setAccelerator(KeyStroke.getKeyStroke(86, 2));
-		this.jMenuItemEinfuegen.setText("Einfügen");
+		this.jMenuItemEinfuegen.setText("EinfÃ¼gen");
 		this.jMenuBearbeiten.add(this.jMenuItemEinfuegen);
 
 		this.jMenuBar1.add(this.jMenuBearbeiten);
@@ -388,7 +388,7 @@ public class RemaspView extends JFrame {
 		});
 		this.jMenu1.add(this.jMenuItemRMSteuerung);
 
-		this.jMenuItem1.setText("Befehlsübersicht");
+		this.jMenuItem1.setText("BefehlsÃ¼bersicht");
 		this.jMenuItem1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				RemaspView.this.jMenuItem1ActionPerformed(evt);
@@ -458,7 +458,7 @@ public class RemaspView extends JFrame {
 
 		this.jMenuHilfe.add(this.jMenu2);
 
-		this.jMenuItemUeber.setText("Über");
+		this.jMenuItemUeber.setText("Ãœber");
 		this.jMenuHilfe.add(this.jMenuItemUeber);
 		
 		this.jMenuModdedInfo.setText("Modding Info");
@@ -578,7 +578,7 @@ public class RemaspView extends JFrame {
 			this.jTextPane.setFont(new Font(currentFont.getFontName(), currentFont.getStyle(), 18));
 			this.jTextPane.setText(this.jTextPane.getText());
 		}
-		if (groesse.equals("Groß")) {
+		if (groesse.equals("GroÃŸ")) {
 			this.jTable1.setFont(new Font("Consolas", 0, 24));
 			this.jTable1.setRowHeight(28);
 			((JTextField) this.jTable1.getDefaultEditor(Long.class)).setFont(new Font("Consolas", 0, 24));
@@ -588,7 +588,7 @@ public class RemaspView extends JFrame {
 			this.jTextPane.setText(this.jTextPane.getText());
 		}
 
-		if (groesse.equals("Monströs")) {
+		if (groesse.equals("MonstrÃ¶s")) {
 			this.jTable1.setFont(new Font("Consolas", 0, 50));
 			this.jTable1.setRowHeight(45);
 			((JTextField) this.jTable1.getDefaultEditor(Long.class)).setFont(new Font("Consolas", 0, 50));
@@ -603,7 +603,7 @@ public class RemaspView extends JFrame {
 		final JTextPane anzeigeText = new JTextPane();
 		anzeigeText.setContentType("text/html");
 		anzeigeText.setText(
-				"<html><h3>Allgemeine Anmerkungen</h3>\n<strong>Sprungmarken</strong>: Am Anfang jeder Befehlszeile kann eine Sprungmarke gesetzt werden. Der Name der Sprungmarke muss eindeutig unter allen Sprungmarkennamen sein und muss mit einem Doppelpunkt enden. Der Doppelpunkt selber gehört nicht zum Sprungmarkennamen.<br/>\nBsp.: <br>\n<code>\n...<br>\nSchleifenAnfang: Add 3 <br>\n....<br>\nGoto SchleifenAnfang<br>\n...\n </code> <br><strong>Groß- und Kleinschreibung</strong>: Befehlsnamen sind nicht \"case sensitive\". Es wird also nicht zwischen Groß- und Kleinschreibung unterschieden. <br>\nBsp.: </br>\nDie Wörter <code>Goto, goto oder auch GOTO </code> stellen alle den gleichen Befehl dar.<br><strong>Wertebereich der Register</strong>: Die größte natürliche Zahl, die ein Register speichern kann, ist 9223372036854775807 (=2^63 - 1). Wird im Programm versucht eine größere Zahl zu speichern, so wird das Programm automatisch abgebrochen.</br><h3>Maschinensteuerung</h3>\n        Ãœber den Button <strong>\"Starte Programm\"</strong> wird das sich im Editor befindende Programm ausgeführt. Die Ausführungsgeschwindigkeit kann im Regler \"Millisekunden pro Befehl\" eingestellt werden.<br>\n        Ãœber den Button <strong>\"Starte Einzelschrittmodus\"</strong> wird der Einzelschrittmodus aktiviert. In diesem Modus wird der aktuelle Befehl ausgeführt, falls der zugehörige Pfeilbutton betätigt wird. <br>\n        Ãœber den Button <strong>\"Programm abbrechen\"</strong> wird die aktuelle Programmausführung abgebrochen. <br>\n\n        \n        <h3>Maschinenkonfiguration</h3>\n        <strong>\"Register zwischenspeichern\"</strong> speichert die aktuelle Registerbelegung zwischen. <br>\n        Ãœber den Button <strong>\"Register laden\"</strong> kann eine zuvor gespeicherte Registerbelegung geladen werden. <br>\n        Ãœber den Button <strong>\"Register auf 0 setzen\"</strong> werden alle Register auf 0 gesetzt. <br>\n        Ãœber den Button <strong>\"Setze Anzahl Register\"</strong> kann die Anzahl der Register gesetzt werden. Es ist dabei zu beachten, \n        dass bei diesem Vorgang die Registerinhalte gelöscht werden, danach sind also alle Register mit 0 initialisiert. Die Anzahl der Register sollte nicht höher als 500.000 sein. <br>\n</html>");
+				"<html><h3>Allgemeine Anmerkungen</h3>\n<strong>Sprungmarken</strong>: Am Anfang jeder Befehlszeile kann eine Sprungmarke gesetzt werden. Der Name der Sprungmarke muss eindeutig unter allen Sprungmarkennamen sein und muss mit einem Doppelpunkt enden. Der Doppelpunkt selber gehÃ¶rt nicht zum Sprungmarkennamen.<br/>\nBsp.: <br>\n<code>\n...<br>\nSchleifenAnfang: Add 3 <br>\n....<br>\nGoto SchleifenAnfang<br>\n...\n </code> <br><strong>GroÃŸ- und Kleinschreibung</strong>: Befehlsnamen sind nicht \"case sensitive\". Es wird also nicht zwischen GroÃŸ- und Kleinschreibung unterschieden. <br>\nBsp.: </br>\nDie WÃ¶rter <code>Goto, goto oder auch GOTO </code> stellen alle den gleichen Befehl dar.<br><strong>Wertebereich der Register</strong>: Die grÃ¶ÃŸte natÃ¼rliche Zahl, die ein Register speichern kann, ist 9223372036854775807 (=2^63 - 1). Wird im Programm versucht eine grÃ¶ÃŸere Zahl zu speichern, so wird das Programm automatisch abgebrochen.</br><h3>Maschinensteuerung</h3>\n        Ãœber den Button <strong>\"Starte Programm\"</strong> wird das sich im Editor befindende Programm ausgefÃ¼hrt. Die AusfÃ¼hrungsgeschwindigkeit kann im Regler \"Millisekunden pro Befehl\" eingestellt werden.<br>\n        Ãœber den Button <strong>\"Starte Einzelschrittmodus\"</strong> wird der Einzelschrittmodus aktiviert. In diesem Modus wird der aktuelle Befehl ausgefÃ¼hrt, falls der zugehÃ¶rige Pfeilbutton betÃ¤tigt wird. <br>\n        Ãœber den Button <strong>\"Programm abbrechen\"</strong> wird die aktuelle ProgrammausfÃ¼hrung abgebrochen. <br>\n\n        \n        <h3>Maschinenkonfiguration</h3>\n        <strong>\"Register zwischenspeichern\"</strong> speichert die aktuelle Registerbelegung zwischen. <br>\n        Ãœber den Button <strong>\"Register laden\"</strong> kann eine zuvor gespeicherte Registerbelegung geladen werden. <br>\n        Ãœber den Button <strong>\"Register auf 0 setzen\"</strong> werden alle Register auf 0 gesetzt. <br>\n        Ãœber den Button <strong>\"Setze Anzahl Register\"</strong> kann die Anzahl der Register gesetzt werden. Es ist dabei zu beachten, \n        dass bei diesem Vorgang die Registerinhalte gelÃ¶scht werden, danach sind also alle Register mit 0 initialisiert. Die Anzahl der Register sollte nicht hÃ¶her als 500.000 sein. <br>\n</html>");
 
 		Font currentFont = anzeigeText.getFont();
 		anzeigeText.setFont(new Font(currentFont.getFontName(), currentFont.getStyle(), currentFont.getSize() + 8));
@@ -630,7 +630,7 @@ public class RemaspView extends JFrame {
 		final JTextPane anzeigeText = new JTextPane();
 		anzeigeText.setContentType("text/html");
 		anzeigeText.setText(
-				"<html><strong>LOAD #k</strong>: Lädt die Konstante k in den Akkumulator. <br><strong>LOAD i</strong>: Lädt den Inhalt von Register i in den Akkumulator.<br><strong>LOAD *i</strong>: Lädt den Inhalt von demjenigen Register in den Akkumulator, auf welches Register i zeigt (indirekte Adressierung).<br><strong>STORE i</strong>: Speichert den Inhalt des Akkumulators in Register i.<br><strong>STORE *i</strong>: Speichert den Inhalt des Akkumulators in das Register, worauf Register i zeigt (indirekte Adressierung). Register i darf hier nicht den Inhalt 0 haben, ansonsten wird das Programm abgebrochen.<br><strong>GOTO Marke</strong>: Die Befehlszeile, die mit 'Marke:' anfängt, wird als nächstes ausgeführt.<br><strong>JZERO Marke</strong>: Wenn der Inhalt des Akkukulators 0 ist, wird zu der Befehlszeile gesprungen, welche mit 'Marke:' anfängt.<br><strong>JNZERO Marke</strong>: Wenn der Inhalt des Akkukulators ungleich 0 ist, wird zu der Befehlszeile gesprungen, welche mit 'Marke:' anfängt.<br><strong>END</strong>: Das Programm wird beendet.<br> <br>Bei den folgenden Befehlen kann der Operand x eine Konstante (#k), eine Registernummer (i) oder auch eine indirekte Adresse (*i) bezeichnen.<br><br><strong>ADD x</strong>: Addiert zum Akkumulator den Wert des Operanden x hinzu.<br><strong>SUB x</strong>: Zieht vom Akkumulator den Wert des Operanden x ab. Falls das Ergebnis negativ sein sollte, wird der Akkumulator auf 0 gesetzt.<br><strong>MUL x</strong>: Multipliziert den Akkumulatorinhalt mit dem Wert des Operanden x.<br><strong>DIV x</strong>: Division: Der Akkumulatorinhalt wird durch den Wert von x dividiert. Falls der Wert von x 0 sein sollte, wird das Programm abgebrochen.</html>");
+				"<html><strong>LOAD #k</strong>: LÃ¤dt die Konstante k in den Akkumulator. <br><strong>LOAD i</strong>: LÃ¤dt den Inhalt von Register i in den Akkumulator.<br><strong>LOAD *i</strong>: LÃ¤dt den Inhalt von demjenigen Register in den Akkumulator, auf welches Register i zeigt (indirekte Adressierung).<br><strong>STORE i</strong>: Speichert den Inhalt des Akkumulators in Register i.<br><strong>STORE *i</strong>: Speichert den Inhalt des Akkumulators in das Register, worauf Register i zeigt (indirekte Adressierung). Register i darf hier nicht den Inhalt 0 haben, ansonsten wird das Programm abgebrochen.<br><strong>GOTO Marke</strong>: Die Befehlszeile, die mit 'Marke:' anfÃ¤ngt, wird als nÃ¤chstes ausgefÃ¼hrt.<br><strong>JZERO Marke</strong>: Wenn der Inhalt des Akkukulators 0 ist, wird zu der Befehlszeile gesprungen, welche mit 'Marke:' anfÃ¤ngt.<br><strong>JNZERO Marke</strong>: Wenn der Inhalt des Akkukulators ungleich 0 ist, wird zu der Befehlszeile gesprungen, welche mit 'Marke:' anfÃ¤ngt.<br><strong>END</strong>: Das Programm wird beendet.<br> <br>Bei den folgenden Befehlen kann der Operand x eine Konstante (#k), eine Registernummer (i) oder auch eine indirekte Adresse (*i) bezeichnen.<br><br><strong>ADD x</strong>: Addiert zum Akkumulator den Wert des Operanden x hinzu.<br><strong>SUB x</strong>: Zieht vom Akkumulator den Wert des Operanden x ab. Falls das Ergebnis negativ sein sollte, wird der Akkumulator auf 0 gesetzt.<br><strong>MUL x</strong>: Multipliziert den Akkumulatorinhalt mit dem Wert des Operanden x.<br><strong>DIV x</strong>: Division: Der Akkumulatorinhalt wird durch den Wert von x dividiert. Falls der Wert von x 0 sein sollte, wird das Programm abgebrochen.</html>");
 
 		Font currentFont = anzeigeText.getFont();
 		anzeigeText.setFont(new Font(currentFont.getFontName(), currentFont.getStyle(), currentFont.getSize() + 8));
@@ -658,11 +658,11 @@ public class RemaspView extends JFrame {
 		moddingInfoText.setContentType("text/html");
 		moddingInfoText.setText(
 				"<html>"
-				+ "<h3>Diese JAR wurde gemodded um einige Features hinzuzufügen.</h3>"
+				+ "<h3>Diese JAR wurde gemodded um einige Features hinzuzufÃ¼gen.</h3>"
 				+ "<div>"
 				+ "<h4>Verbesserte Register</h4>"
 				+ "<ul>"
-				+ "<li>Register Zeigen das ASCII-Zeichen für den entsprechenden Wert an</li>"
+				+ "<li>Register Zeigen das ASCII-Zeichen fÃ¼r den entsprechenden Wert an</li>"
 				+ "</ul>"
 				+ "</div>"
 				+ "<div>"
@@ -703,7 +703,7 @@ public class RemaspView extends JFrame {
 		final JTextPane anzeigeText2 = new JTextPane();
 		anzeigeText2.setContentType("text/html");
 		anzeigeText2.setText(
-				"<html><h3>Datei-<em>Neu</em><a name=\"Datei-Neu\"></a></h3>\nErstellt ein neues, leeres Dokument. Gegebenenfalls wird gefragt, ob das aktuelle Dokument gespeichert werden soll.\n<br>Tastenkürzel: Strg+n\n\n<h3>Datei-<em>Ã–ffnen</em><a name=\"Datei-Ã–ffnen\"></a></h3>\nLädt eine beliebige Textdatei im Editor.\n<br>Tastenkürzel: Strg+o\n\n<h3>Datei-<em>Speichern</em> <a name=\"Datei-Speichern\"></a></h3>\nSpeichert das aktuelle Dokument. Falls noch kein Dateiname vergeben ist, wird nach einem gefragt.\n<br>Tastenkürzel: Strg+s\n\n<h3>Datei-<em>Speichern unter</em> <a name=\"Datei-SpeichernUnter\"></a></h3>\nSpeichert das Dokument unter einem angegebenen Namen.\n\n<h3>Datei-<em>Drucken</em> <a name=\"Datei-Drucken\"></a></h3>\nDie Datei kann über die im System vorhandenen Drucker gedruckt werden.\n<br>Tastenkürzel: Strg+p\n\n<h3>Datei-<em>Beenden</em> <a name=\"Datei-Beenden\"></a></h3>\nBeendet die komplette Simulationsumgebung.\n\n<h3>Bearbeiten-<em>Rückgängig</em> <a name=\"Bearbeiten-Rückgängig\"></a></h3>\nMacht die zuletzt getätigte Ã„nderung im Editor rückgängig.\n<br>Tastenkürzel: Strg+z.\n\n<h3>Bearbeiten-<em>Ausschneiden</em>  <a name=\"Bearbeiten-Ausschneiden\"></a></h3>\nSchneidet die markierte Textstelle aus und kopiert sie in die Zwischenablage.\n<br>Tastenkürzel: Strg+x\n\n<h3> Bearbeiten-<em>Kopieren</em> <a name=\"Bearbeiten-Kopieren\"></a></h3>\nKopiert die markierte Textstelle in die Zwischenablage.\n<br>Tastenkürzel: Strg+c\n\n<h3> Bearbeiten-<em>Einfügen</em> <a name=\"Bearbeiten-Einfügen\"></a></h3>\nFügt den Inhalt der Zwischenablage an der aktuellen Cursorposition ein. Es kann nur Text eingefügt werden.\n<br>Tastenkürzel: Strg+v\n\n<h3>Format-<em>Fett, Kursiv, Unterstrichen</em>  <a name=\"Format-Schriftausrichtung\"></a></h3>\nFormatiert den ausgewählten Text fett, kursiv oder unterstrichen.\n\n<h3> Format-<em>Serif, SansSerif</em><a name=\"Format-Schriftart\"></a></h3>\nAls Schriftarten stehen Serif und SansSerif zur Verfügung.\n\n<h3>Format-<em>Rot, Grün, Blau, Schwarz</em> <a name=\"Format-Farbe\"></a></h3>\nLässt den ausgewählten Text in der entsprechenden Farbe erscheinen.\n\n\n</html>");
+				"<html><h3>Datei-<em>Neu</em><a name=\"Datei-Neu\"></a></h3>\nErstellt ein neues, leeres Dokument. Gegebenenfalls wird gefragt, ob das aktuelle Dokument gespeichert werden soll.\n<br>TastenkÃ¼rzel: Strg+n\n\n<h3>Datei-<em>Ã–ffnen</em><a name=\"Datei-Ã–ffnen\"></a></h3>\nLÃ¤dt eine beliebige Textdatei im Editor.\n<br>TastenkÃ¼rzel: Strg+o\n\n<h3>Datei-<em>Speichern</em> <a name=\"Datei-Speichern\"></a></h3>\nSpeichert das aktuelle Dokument. Falls noch kein Dateiname vergeben ist, wird nach einem gefragt.\n<br>TastenkÃ¼rzel: Strg+s\n\n<h3>Datei-<em>Speichern unter</em> <a name=\"Datei-SpeichernUnter\"></a></h3>\nSpeichert das Dokument unter einem angegebenen Namen.\n\n<h3>Datei-<em>Drucken</em> <a name=\"Datei-Drucken\"></a></h3>\nDie Datei kann Ã¼ber die im System vorhandenen Drucker gedruckt werden.\n<br>TastenkÃ¼rzel: Strg+p\n\n<h3>Datei-<em>Beenden</em> <a name=\"Datei-Beenden\"></a></h3>\nBeendet die komplette Simulationsumgebung.\n\n<h3>Bearbeiten-<em>RÃ¼ckgÃ¤ngig</em> <a name=\"Bearbeiten-RÃ¼ckgÃ¤ngig\"></a></h3>\nMacht die zuletzt getÃ¤tigte Ã„nderung im Editor rÃ¼ckgÃ¤ngig.\n<br>TastenkÃ¼rzel: Strg+z.\n\n<h3>Bearbeiten-<em>Ausschneiden</em>  <a name=\"Bearbeiten-Ausschneiden\"></a></h3>\nSchneidet die markierte Textstelle aus und kopiert sie in die Zwischenablage.\n<br>TastenkÃ¼rzel: Strg+x\n\n<h3> Bearbeiten-<em>Kopieren</em> <a name=\"Bearbeiten-Kopieren\"></a></h3>\nKopiert die markierte Textstelle in die Zwischenablage.\n<br>TastenkÃ¼rzel: Strg+c\n\n<h3> Bearbeiten-<em>EinfÃ¼gen</em> <a name=\"Bearbeiten-EinfÃ¼gen\"></a></h3>\nFÃ¼gt den Inhalt der Zwischenablage an der aktuellen Cursorposition ein. Es kann nur Text eingefÃ¼gt werden.\n<br>TastenkÃ¼rzel: Strg+v\n\n<h3>Format-<em>Fett, Kursiv, Unterstrichen</em>  <a name=\"Format-Schriftausrichtung\"></a></h3>\nFormatiert den ausgewÃ¤hlten Text fett, kursiv oder unterstrichen.\n\n<h3> Format-<em>Serif, SansSerif</em><a name=\"Format-Schriftart\"></a></h3>\nAls Schriftarten stehen Serif und SansSerif zur VerfÃ¼gung.\n\n<h3>Format-<em>Rot, GrÃ¼n, Blau, Schwarz</em> <a name=\"Format-Farbe\"></a></h3>\nLÃ¤sst den ausgewÃ¤hlten Text in der entsprechenden Farbe erscheinen.\n\n\n</html>");
 
 		Font currentFont = anzeigeText2.getFont();
 		anzeigeText2.setFont(new Font(currentFont.getFontName(), currentFont.getStyle(), currentFont.getSize() + 8));
@@ -755,7 +755,7 @@ public class RemaspView extends JFrame {
 
 	private void jMenuItemAddRekBspActionPerformed(ActionEvent evt) {
 		getjTextPane().setText(
-				"// Berechnung von m+n rekursiv mittels eines Stacks\n// add(m,n) = n, falls m = 0\n// add(m,n) = add(m-1,n)+1, sonst\n// Eingabe: R4 = m, R5 = n\n// Ausgabe: R0 = m+n\n //Initialisiere Top und Anzahl\n   LOAD  #6\n   STORE 1\n   LOAD  #0\n   STORE 2\n\n //*****Stapel Aufbau******\n //push(m)\n   LOAD  1\n   ADD   #1\n   STORE 1\n   LOAD  4\n   STORE *1\n   LOAD  2\n   ADD #1\n   STORE 2\n //****Stapel Aufbau: Schleifenanfang***\n //peek()\nSchlfAnf:            LOAD  *1\n   STORE 3   //R3=\"aktuelles\" m\n   JZERO StplAbbau //Springe zu Stapel Abbau\n // push(m-1)\n   LOAD  1\n   ADD #1\n   STORE 1\n   LOAD  3\n   SUB #1\n   STORE *1\n   LOAD  2\n   ADD #1\n   STORE 2\n //Gehe zu \"Stapel Aufbau: Schleifenanfang\"\n   GOTO  SchlfAnf\n\n //****Stapel Abbau*****\n //speicher n in *top\nStplAbbau: LOAD  5\n   STORE *1\n //*****Stapel Abbau: Schleifenanfang*****\n //Addiere 1 zum zureuckgegebenen Ergebnis\nSchlf2Anf: LOAD  *1\n   ADD #1\n   STORE 3\n //Dekrementiere top und anzahl\n   LOAD  1\n   SUB #1\n   STORE 1\n   LOAD  2\n   SUB #1\n   STORE 2\n //Wenn der Stapel leer ist, springe zum Ende\n   JZERO Ende\n //Speicher Rückgabewert int *top\n   LOAD  3\n   STORE *1\n   GOTO  Schlf2Anf\nEnde:    LOAD  7\n   END");
+				"// Berechnung von m+n rekursiv mittels eines Stacks\n// add(m,n) = n, falls m = 0\n// add(m,n) = add(m-1,n)+1, sonst\n// Eingabe: R4 = m, R5 = n\n// Ausgabe: R0 = m+n\n //Initialisiere Top und Anzahl\n   LOAD  #6\n   STORE 1\n   LOAD  #0\n   STORE 2\n\n //*****Stapel Aufbau******\n //push(m)\n   LOAD  1\n   ADD   #1\n   STORE 1\n   LOAD  4\n   STORE *1\n   LOAD  2\n   ADD #1\n   STORE 2\n //****Stapel Aufbau: Schleifenanfang***\n //peek()\nSchlfAnf:            LOAD  *1\n   STORE 3   //R3=\"aktuelles\" m\n   JZERO StplAbbau //Springe zu Stapel Abbau\n // push(m-1)\n   LOAD  1\n   ADD #1\n   STORE 1\n   LOAD  3\n   SUB #1\n   STORE *1\n   LOAD  2\n   ADD #1\n   STORE 2\n //Gehe zu \"Stapel Aufbau: Schleifenanfang\"\n   GOTO  SchlfAnf\n\n //****Stapel Abbau*****\n //speicher n in *top\nStplAbbau: LOAD  5\n   STORE *1\n //*****Stapel Abbau: Schleifenanfang*****\n //Addiere 1 zum zureuckgegebenen Ergebnis\nSchlf2Anf: LOAD  *1\n   ADD #1\n   STORE 3\n //Dekrementiere top und anzahl\n   LOAD  1\n   SUB #1\n   STORE 1\n   LOAD  2\n   SUB #1\n   STORE 2\n //Wenn der Stapel leer ist, springe zum Ende\n   JZERO Ende\n //Speicher RÃ¼ckgabewert int *top\n   LOAD  3\n   STORE *1\n   GOTO  Schlf2Anf\nEnde:    LOAD  7\n   END");
 	}
 
 	private void jMenuItemSummeBspActionPerformed(ActionEvent evt) {
@@ -765,12 +765,12 @@ public class RemaspView extends JFrame {
 
 	private void jMenuItemListenEndeBspActionPerformed(ActionEvent evt) {
 		getjTextPane().setText(
-				"// Das Listenende (letzte Element einer Liste) wird gesucht\n// genauer:   In Register 2i müssen Sie die zu speichernde Zahl schreiben, und in R 2i+1 den Zeiger auf das folgende Listenelement. i>=2\n//   Durch R2i+1=0 wird das Ende der Liste signalisiert.\n//   In R1 muss der Zeiger auf das erste Listenelement reingeschrieben werden.\n//     Die folgenden Instruktionen Speichern den Wert des letzten Listenelemntes in R0\n//   R2 und R3 müssen für Nebenrechnungen frei bleiben.\n\n \n   //Der Listenkopf wird in R3 geladen\n   LOAD  1\n   STORE 3\n\n   //while R3 ungleich 0 do ... od\nWhile-Kopf:  LOAD  3\n   JZERO After-While //nach While Schleife\n \n   //R2= Wert des aktuellen Listengliedes\n   LOAD  *3\n   STORE 2\n\n   //R3= Position des nächsten Listengliedes\n   LOAD  3\n   ADD #1\n   STORE 3\n   LOAD  *3\n   STORE 3\n\n   GOTO  While-Kopf\n\n   //Nach der While Schleife \nAfter-While: LOAD  2\n   END\n ");
+				"// Das Listenende (letzte Element einer Liste) wird gesucht\n// genauer:   In Register 2i mÃ¼ssen Sie die zu speichernde Zahl schreiben, und in R 2i+1 den Zeiger auf das folgende Listenelement. i>=2\n//   Durch R2i+1=0 wird das Ende der Liste signalisiert.\n//   In R1 muss der Zeiger auf das erste Listenelement reingeschrieben werden.\n//     Die folgenden Instruktionen Speichern den Wert des letzten Listenelemntes in R0\n//   R2 und R3 mÃ¼ssen fÃ¼r Nebenrechnungen frei bleiben.\n\n \n   //Der Listenkopf wird in R3 geladen\n   LOAD  1\n   STORE 3\n\n   //while R3 ungleich 0 do ... od\nWhile-Kopf:  LOAD  3\n   JZERO After-While //nach While Schleife\n \n   //R2= Wert des aktuellen Listengliedes\n   LOAD  *3\n   STORE 2\n\n   //R3= Position des nÃ¤chsten Listengliedes\n   LOAD  3\n   ADD #1\n   STORE 3\n   LOAD  *3\n   STORE 3\n\n   GOTO  While-Kopf\n\n   //Nach der While Schleife \nAfter-While: LOAD  2\n   END\n ");
 	}
 
 	private void jMenuItemMaximumBspActionPerformed(ActionEvent evt) {
 		getjTextPane().setText(
-				"// Berechnung des Maximums \n// Eingabe: R1 und R2\n// Ausgabe: R0 = max(R1, R2)\n\n   LOAD 1\n   SUB 2\n   JZERO R2-größer\n   // Fall R1 > R2\n   LOAD 1\n   GOTO Ende\n   // Fall R2 >= R1\nR2-größer: LOAD 2\nEnde:    END");
+				"// Berechnung des Maximums \n// Eingabe: R1 und R2\n// Ausgabe: R0 = max(R1, R2)\n\n   LOAD 1\n   SUB 2\n   JZERO R2-grÃ¶ÃŸer\n   // Fall R1 > R2\n   LOAD 1\n   GOTO Ende\n   // Fall R2 >= R1\nR2-grÃ¶ÃŸer: LOAD 2\nEnde:    END");
 	}
 
 	public JTextPane getjTextPane() {

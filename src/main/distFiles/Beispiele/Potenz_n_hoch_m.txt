@@ -1,4 +1,4 @@
-// Registermaschine für die Berechnung von n hoch m
+// Registermaschine fÃ¼r die Berechnung von n hoch m
 // Registerbelegung
 // 	R1	n
 // 	R2 	m
@@ -13,5 +13,5 @@ M1:	LOAD 2		// lade Exponent
 	LOAD 3		
 	MUL 1		// Ergebnis = Ergebnis * n
 	STORE 3
-	GOTO M1		// nächster Schleifendurchlauf
+	GOTO M1		// nÃ¤chster Schleifendurchlauf
 Ende:	END

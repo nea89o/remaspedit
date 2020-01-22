@@ -95,7 +95,7 @@ public class ParsingUtil {
 				konfiguration.getBefehlsSpeicher()
 						.add(singularCommand.get().generate(null, label, startOffset, endOffset));
 			} else {
-				throw new KeinGueltigerBefehlException("Kein Gültiger Befehl\n" + label + " " + befehlGesplittet.get(0),
+				throw new KeinGueltigerBefehlException("Kein GÃ¼ltiger Befehl\n" + label + " " + befehlGesplittet.get(0),
 						startOffset, endOffset);
 			}
 		}
@@ -122,12 +122,12 @@ public class ParsingUtil {
 							.add(regularCommand.get().generate(operand, label, startOffset, endOffset));
 				} else {
 					throw new KeinGueltigerBefehlException(
-							"kein gültiger Befehl\n" + label + " " + befehlString + " " + operandString, startOffset,
+							"kein gÃ¼ltiger Befehl\n" + label + " " + befehlString + " " + operandString, startOffset,
 							endOffset);
 				}
 
 			} catch (Exception e) {
-				throw new KeinGueltigerOperandException("Kein gültiger Operand: " + operandString, startOffset,
+				throw new KeinGueltigerOperandException("Kein gÃ¼ltiger Operand: " + operandString, startOffset,
 						endOffset);
 			}
 
@@ -138,7 +138,7 @@ public class ParsingUtil {
 			for (String s : befehlGesplittet) {
 				falscherBefehl = falscherBefehl + s + " ";
 			}
-			throw new KeinGueltigerBefehlException("Kein gültiger Befehl\n" + falscherBefehl, startOffset, endOffset);
+			throw new KeinGueltigerBefehlException("Kein gÃ¼ltiger Befehl\n" + falscherBefehl, startOffset, endOffset);
 		}
 	}
 
