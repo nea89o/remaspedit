@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: JEClasses.jar
+Created-By: 1.8.0_31 (Oracle Corporation)
+Main-Class: remasp.Remasp
+
