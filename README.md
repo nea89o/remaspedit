@@ -21,4 +21,14 @@ Wenn das Original Remasp für den Frontunterricht genutzt wurde, kam es in unser
 
 Die Register zeigen jetzt das korrespondierende ASCII-Zeichen an.
 
+## Installation
+
+Die in den [Releases][releases] bereitgestellte ``remaspedit.jar`` ist die aktuelle stabile Version und kann wie die Original ``.zip`` verwendet werden. Für die neuste Developmentversion im master muss diese mittels git geklont werden. Dann kann mittels ``.gradlew dist`` eine entsprechende zip datei im Ordner ``build/dist/`` erstellt werden.
+
+## Takedown
+
+Da ein Großteil der Arbeit von Norman Sutatyo stammt, werde ich auf Wunsch das Repo herunternehmen, oder zumindestens nur noch die Endjar bereitstellen, anstatt dem gesamten Sourcecode. <a href="mailto:roman.graef@gmail.com">Email</a>
+
+
+[releases]: https://github.com/romangraef/remaspedit/releases
 [remasp]: https://arbeitsplattform.bildung.hessen.de/fach/informatik/registermaschine.html
